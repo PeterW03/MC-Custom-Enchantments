@@ -1,4 +1,4 @@
-# Desc: Runs all functions related to enchants
+# Desc: Calls enchantment functions if required
 #
 # Called by: #minecraft:tick
 
@@ -13,23 +13,15 @@ execute as @a store result score @s ench_falling run data get entity @s FallDist
 execute as @a store result score @s ench_hurt run data get entity @s HurtTime
 
 # Do the effects
+
 # Helmet
-# # Sight
-effect give @a[scores={ench_helm=1}] minecraft:night_vision 11 0 true
-# # Hardened
-execute as @a[scores={ench_helm=2}] at @a[scores={ench_helm=2}] unless block ~ ~1 ~ air run effect give @s minecraft:regeneration 1 4 true
+execute if entity @a[scores={ench_helm=1..}] run function c_ench:helm
 
 # Chestplate
-# # Adrenaline
-execute as @a[scores={ench_chest=1,ench_hurt=1..}] run effect give @s minecraft:strength 5 0 true
+execute if entity @a[scores={ench_chest=1..}] run function c_ench:chest
 
 # Leggings
-# # Adrenaline
-execute as @a[scores={ench_legs=1,ench_hurt=1..}] run effect give @s minecraft:speed 5 0 true
+execute if entity @a[scores={ench_legs=1..}] run function c_ench:legs
 
 # Boots
-# # Rabbit
-effect give @a[scores={ench_boot=1}] minecraft:jump_boost 1 0 true
-# # Safety
-execute as @a[scores={ench_boot=2,ench_falling=8..}] run effect give @s minecraft:slow_falling 10 0 true
-execute as @a[scores={ench_boot=2,ench_falling=8..}] run effect give @s minecraft:levitation 1 244 true
+execute if entity @a[scores={ench_boot=1..}] run function c_ench:boot
