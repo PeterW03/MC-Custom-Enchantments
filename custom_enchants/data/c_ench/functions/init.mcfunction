@@ -13,4 +13,4 @@ scoreboard objectives add ench_falling dummy
 scoreboard objectives add ench_hurt dummy
 
 # Identifiers for the smithing table upgrade
-scoreboard objectives add isNetherStar dummy
+scoreboard objectives add ench_itemTrack dummy
