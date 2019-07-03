@@ -11,3 +11,6 @@ scoreboard objectives add ench_boot dummy
 # Dummy tracker stats for some enchants (they get updated with NBT data in our tick function)
 scoreboard objectives add ench_falling dummy
 scoreboard objectives add ench_hurt dummy
+
+# Identifiers for the smithing table upgrade
+scoreboard objectives add ench_itemTrack dummy
