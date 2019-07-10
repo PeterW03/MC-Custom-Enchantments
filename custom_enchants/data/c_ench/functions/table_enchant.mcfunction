@@ -17,7 +17,7 @@ execute if entity @e[type=item,distance=..1.5,scores={ench_itemTrack=9}] run sco
 # Generate the random number
 function c_ench:random_main
 # Apply the enchants
-data modify entity @e[type=item,distance=..1.5,scores={ench_itemTrack=6..},limit=1] Item.tag.isCustom set value 1
+data modify entity @e[type=item,distance=..1.5,scores={ench_itemTrack=6..},limit=1] Item.tag.isCustom set value 1b
 execute if entity @s[scores={ench_RNG=1}] run data modify entity @e[type=item,distance=..1.5,scores={ench_itemTrack=6..},limit=1] Item.tag.ench set value 1
 execute if entity @s[scores={ench_RNG=2}] run data modify entity @e[type=item,distance=..1.5,scores={ench_itemTrack=6..},limit=1] Item.tag.ench set value 2
 
