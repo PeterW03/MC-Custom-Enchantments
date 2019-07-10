@@ -8,4 +8,6 @@ scoreboard objectives remove ench_legs
 scoreboard objectives remove ench_boot
 scoreboard objectives remove ench_falling
 scoreboard objectives remove ench_hurt
-scoreboard objectives remove ench_itemTrack 
+scoreboard objectives remove ench_itemTrack
+scoreboard objectives remove ench_itemCount
+scoreboard objectives remove ench_RNG
