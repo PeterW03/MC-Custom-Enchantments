@@ -28,10 +28,36 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:experienc
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:blaze_rod",Count:1b}}] ench_itemTrack 3
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b}}] ench_itemTrack 4
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:glowstone_dust",Count:1b}}] ench_itemTrack 5
+
+# Diamond armor
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:diamond_helmet",Count:1b}}] ench_itemTrack 6
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:diamond_chestplate",Count:1b}}] ench_itemTrack 7
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:diamond_leggings",Count:1b}}] ench_itemTrack 8
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:diamond_boots",Count:1b}}] ench_itemTrack 9
+
+# Gold armor
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_helmet",Count:1b}}] ench_itemTrack 6
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_chestplate",Count:1b}}] ench_itemTrack 7
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_leggings",Count:1b}}] ench_itemTrack 8
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:gold_boots",Count:1b}}] ench_itemTrack 9
+
+# Iron armor
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_helmet",Count:1b}}] ench_itemTrack 6
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_chestplate",Count:1b}}] ench_itemTrack 7
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_leggings",Count:1b}}] ench_itemTrack 8
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:iron_boots",Count:1b}}] ench_itemTrack 9
+
+# Chainmail armor
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chainmail_helmet",Count:1b}}] ench_itemTrack 6
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chainmail_chestplate",Count:1b}}] ench_itemTrack 7
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chainmail_leggings",Count:1b}}] ench_itemTrack 8
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:chainmail_boots",Count:1b}}] ench_itemTrack 9
+
+# Leather armor
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_helmet",Count:1b}}] ench_itemTrack 6
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_chestplate",Count:1b}}] ench_itemTrack 7
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_leggings",Count:1b}}] ench_itemTrack 8
+scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:leather_boots",Count:1b}}] ench_itemTrack 9
 
 # Do the effects
 # Helmet

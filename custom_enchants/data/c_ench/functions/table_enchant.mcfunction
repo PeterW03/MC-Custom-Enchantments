@@ -22,7 +22,6 @@ execute if entity @s[scores={ench_RNG=1}] run data modify entity @e[type=item,di
 execute if entity @s[scores={ench_RNG=2}] run data modify entity @e[type=item,distance=..1.5,scores={ench_itemTrack=6..},limit=1] Item.tag.ench set value 2
 
 # Add the Lore
-#["{\"text\":\"Adrenaline\",\"color\":\"gray\",\"italic\":false}"]
 # # Sight
 execute if entity @s[scores={ench_RNG=1}] run data modify entity @e[type=item,distance=..2,scores={ench_itemTrack=6},limit=1] Item.tag.display.Lore set value ["{\"text\":\"Sight\",\"color\":\"gray\",\"italic\":false}"]
 # # Hardened
