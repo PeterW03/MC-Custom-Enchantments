@@ -69,6 +69,9 @@ execute if entity @a[scores={ench_legs=1..}] run function c_ench:legs
 # Boots
 execute if entity @a[scores={ench_boot=1..}] run function c_ench:boot
 
+# Reset stack trackers
+scoreboard players set @a ench_shift 0
+
 # Smithing table upgrades (Weird order for tick ordering)
 # Part 2
 execute as @e[tag=smithing_table_exec] at @s run function c_ench:table_upgrade2
