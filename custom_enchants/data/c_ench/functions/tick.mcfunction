@@ -11,6 +11,7 @@ execute as @a store result score @s ench_boot run data get entity @s Inventory[{
 # Update our dummy trackers
 execute as @a store result score @s ench_falling run data get entity @s FallDistance
 execute as @a store result score @s ench_hurt run data get entity @s HurtTime
+scoreboard players add @a[scores={ench_legs=2}] ench_timer 1
 
 # Track stuff for the smithing table upgrade
 # # # Ids
@@ -69,8 +70,9 @@ execute if entity @a[scores={ench_legs=1..}] run function c_ench:legs
 # Boots
 execute if entity @a[scores={ench_boot=1..}] run function c_ench:boot
 
-# Reset stack trackers
+# Reset stat trackers
 scoreboard players set @a ench_shift 0
+scoreboard players set @a[scores={ench_timer=100..}] ench_timer 0
 
 # Smithing table upgrades (Weird order for tick ordering)
 # Part 2

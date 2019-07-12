@@ -11,3 +11,5 @@ scoreboard objectives remove ench_hurt
 scoreboard objectives remove ench_itemTrack
 scoreboard objectives remove ench_itemCount
 scoreboard objectives remove ench_RNG
+scoreboard objectives remove ench_shift
+scoreboard objectives remove ench_timer

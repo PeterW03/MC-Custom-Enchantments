@@ -10,7 +10,7 @@ execute if entity @e[type=item,distance=..1.5,scores={ench_itemTrack=6}] run sco
 # Chest
 execute if entity @e[type=item,distance=..1.5,scores={ench_itemTrack=7}] run scoreboard players set @s ench_RNG 2
 # Legs
-execute if entity @e[type=item,distance=..1.5,scores={ench_itemTrack=8}] run scoreboard players set @s ench_RNG 1
+execute if entity @e[type=item,distance=..1.5,scores={ench_itemTrack=8}] run scoreboard players set @s ench_RNG 2
 # Boot
 execute if entity @e[type=item,distance=..1.5,scores={ench_itemTrack=9}] run scoreboard players set @s ench_RNG 2
 
@@ -32,6 +32,8 @@ execute if entity @s[scores={ench_RNG=1}] run data modify entity @e[type=item,di
 execute if entity @s[scores={ench_RNG=2}] run data modify entity @e[type=item,distance=..2,scores={ench_itemTrack=7},limit=1] Item.tag.display.Lore set value ["{\"text\":\"Immunity\",\"color\":\"gray\",\"italic\":false}"]
 # # Adrenaline (Legs)
 execute if entity @s[scores={ench_RNG=1}] run data modify entity @e[type=item,distance=..2,scores={ench_itemTrack=8},limit=1] Item.tag.display.Lore set value ["{\"text\":\"Adrenaline\",\"color\":\"gray\",\"italic\":false}"]
+# # Regeneration
+execute if entity @s[scores={ench_RNG=2}] run data modify entity @e[type=item,distance=..2,scores={ench_itemTrack=8},limit=1] Item.tag.display.Lore set value ["{\"text\":\"Regeneration\",\"color\":\"gray\",\"italic\":false}"]
 # # Rabbit
 execute if entity @s[scores={ench_RNG=1}] run data modify entity @e[type=item,distance=..2,scores={ench_itemTrack=9},limit=1] Item.tag.display.Lore set value ["{\"text\":\"Rabbit\",\"color\":\"gray\",\"italic\":false}"]
 # # Safety

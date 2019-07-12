@@ -12,6 +12,9 @@ scoreboard objectives add ench_boot dummy
 scoreboard objectives add ench_falling dummy
 scoreboard objectives add ench_hurt dummy
 
+# Dummy timer
+scoreboard objectives add ench_timer dummy
+
 # Stat trackers
 scoreboard objectives add ench_shift minecraft.custom:minecraft.crouch_one_cm
 
